@@ -288,7 +288,7 @@ if __name__ == "__main__":
                 sys.exit(2)
         elif o in ("-n", "--note"):
             try:
-                metronome.live_tpb = int(a)
+                metronome.live_note = int(a)
             except ValueError as e:
                 print("Integer required: %s" % e)
                 sys.exit(2)
